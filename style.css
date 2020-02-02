@@ -13,18 +13,30 @@ nav{
     position: sticky;
     height: 120px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
-nav img{
+#logo img {
     width: 80px;
-    background-color: #fff;
+    background: #fff;
     border-radius: 50%;
-    padding: 20px;
+    padding: 10px;
+    transition: 1s;
 }
+
+#logo img:hover {
+    transform: scale(1.1);
+}
+
 
 nav ol li{
     display: inline-block;
     padding: 30px;
+    transition: 0.7s;
+}
+
+nav ol li:hover {
+    transform: scale(1.5);
 }
 
 
@@ -40,6 +52,14 @@ nav ol li a{
     height: 100vh;
     background-size: cover;
     margin-top: -120px;
+}
+
+#banner:hover{
+    transform: scale(1.15);
+}
+
+#banner-box{
+    overflow: hidden;
 }
 
 
